@@ -7,5 +7,6 @@
     , "jade": ">= 0.0.1"
     , "coffee-script": "latest"
     , "mongoose" : "2.x.x"
+    , "bcrypt":"latest"
   }
 }
