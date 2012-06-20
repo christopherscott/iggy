@@ -8,3 +8,5 @@ A super-fast, lightweight, Node.JS-based blogging engine.
 - jQuery Mobile
 - Stylus
 - Jade
+
+goal:
