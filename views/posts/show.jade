@@ -1,2 +1,5 @@
-h1 posts#show
-p posts show page
+extends ../layout
+
+block content
+  article= post.body
+  a(href="/post/edit/#{post.slug}") edit "#{post.title}"

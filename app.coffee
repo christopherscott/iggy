@@ -8,7 +8,9 @@ app = express()
 
 app.use express.static "#{__dirname}/public"
 app.set 'view engine', 'jade'
+app.use express.logger()
 
+# mount routes
 require('./routes/posts')(app)
 
 app.get '/', (req, res) ->
@@ -18,4 +20,4 @@ app.get '/', (req, res) ->
 mongoose.connect "mongodb://#{config.db.host}/#{config.db.name}"
 
 app.listen 3000
-console.log 'app listening on 3000'
+console.log "iggy started: application listening on port: #{config.port}"

@@ -1,13 +1,14 @@
-extends layout
-
+extends ../layout
+  
 block title
   title something else
 
-h1 posts#index
-p posts index page
-
-ul#posts
-  each post in posts
-    li
-      h3= post.title
-      p= post.body
+block content
+  h1 posts#index
+  p posts index page
+  ul#posts
+    each post in posts
+      li
+        a(href="/post/#{post.slug}")
+          h3= post.title
+        p= post.body

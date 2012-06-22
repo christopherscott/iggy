@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  form(method="POST", action="/posts")
+    input(type="submit", value="Save")
+    div
+      label(for="post-title")
+        input#post-title(type="text", value="#{post.title}", name="post-title")
+    div#post-body
+      label(for="post-body")
+      textarea(rows="50", cols="80", name="post-body")= post.body
+
+    div#post-preview this is the preview
+      | this is more preview
+      | are these newlines?

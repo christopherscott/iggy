@@ -6,3 +6,16 @@ body {
 a {
   color: #00B7FF;
 }
+
+#post-preview {
+  width: 400px;
+  float: right; 
+}
+
+#post-body {
+  float: left;
+}
+
+footer {
+  clear: both;
+}

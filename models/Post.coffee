@@ -7,6 +7,7 @@ Tag = new Schema
 
 Post = new Schema
   title: String
+  slug: String
   body: String
   created_at: Date
   modified_at: Date
